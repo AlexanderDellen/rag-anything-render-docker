@@ -1,8 +1,8 @@
 services:
   - type: web
     name: rag-anything-api
-    env: docker
-    plan: standard           # für Office/LibreOffice empfehlenswert
+    runtime: docker
+    plan: standard
     region: frankfurt
     dockerfilePath: ./Dockerfile
     healthCheckPath: /healthz
@@ -10,12 +10,10 @@ services:
       - key: OPENAI_API_KEY
         sync: false
       - key: OPENAI_BASE_URL
-        value: ""            # leer lassen, wenn du OpenAI direkt nutzt
+        value: ""
       - key: WORKDIR
         value: "/data/rag_storage"
     disk:
-       name: ragdata
-        mountPath: /data
-        sizeGB: 10
-
-
+      name: ragdata
+      mountPath: /data
+      sizeGB: 10
