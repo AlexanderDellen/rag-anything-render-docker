@@ -1,5 +1,7 @@
 fastapi
 uvicorn[standard]
 python-multipart
-raganything[all]
-lightrag
+
+# Pinne kompatible Versionen:
+raganything==0.2.1
+lightrag==0.1.9
