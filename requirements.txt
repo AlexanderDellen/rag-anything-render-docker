@@ -2,6 +2,6 @@ fastapi
 uvicorn[standard]
 python-multipart
 
-# RAG-Anything + LightRAG (richtige Paketnamen & kompatible Versionen)
+# Library-Versionen, die zusammen funktionieren
 raganything[all]==1.2.8
-LightRAG==0.1.9
+lightrag==0.1.0b3
