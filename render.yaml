@@ -14,7 +14,8 @@ services:
       - key: WORKDIR
         value: "/data/rag_storage"
     disk:
-      - name: ragdata
+       name: ragdata
         mountPath: /data
         sizeGB: 10
+
 
